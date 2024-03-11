@@ -29,6 +29,10 @@ const App = () => {
     }
   };
 
+  useEffect(() => {
+    fetchHolidays(); // This will load holidays data when the component mounts
+  }, [selectedCountry]);
+
   const getMonthlyData = (holidays) => {
     const monthCounts = new Array(12).fill(0); 
     holidays.forEach(holiday => {

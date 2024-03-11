@@ -30,7 +30,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    fetchHolidays(); // This will load holidays data when the component mounts
+    fetchHolidays(); 
   }, [selectedCountry]);
 
   const getMonthlyData = (holidays) => {
